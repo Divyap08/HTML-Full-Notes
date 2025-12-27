@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h3>Registration Form</h3>
+        <!-- action.php will process our this form in backend -->
+        <form action="/action.php">
+            <!-- input box
+             placeholder means box mai kuch likha hoga pehelese -->
+            <input type="text" placeholder="Username"> 
+            <br> <br> 
+            <input type="password" placeholder="Password">
+<br> <br>
+
+            <!-- label means if i click on text it also okay (means i don't click on circle still ok,i click on text infront of that it tick our option)
+             radio buttons = here you select only one option
+             VALUE for backend it gives linking of value in backend -->
+            <label for="11">
+             <input type="radio" value="class XI" name="class" id="11">class XI
+             </label> <br> <br>
+             <label for="12">
+             <input type="radio" value="class XII" name="class" id="12">class XII
+             </label>
+<br> <br>
+            <h5>Select your favorite subjects</h5> 
+             <label for="phy">
+                <input type="checkbox" value="phy" name="class" id="11">Physics
+            </label> <br>
+            <label for="math">
+                <input type="checkbox" value="math" name="class" id="12">Math
+            </label> <br>
+            <label for="chem">
+                <input type="checkbox" value="chem" name="class" id="13">Chemistry
+            </label>  <br>
+            <label for="bio">
+                <input type="checkbox" value="bio" name="class" id="14">Bio
+            </label>  <br>
+            <label for="eng">
+                <input type="checkbox" value="eng" name="class" id="15">Eng
+            </label>
+<br><br>
+           Select your City:
+            <select name="city">
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+            </select>
+<br>
+        <!-- <textarea name="feedback"  id="11" placeholder="Please give your feedback here">FEEDBACK</textarea>   -->
+<br>
+         <textarea name="feedback"  id="11" placeholder="Please give your feedback here" rows="5"></textarea>  
+<br>
+        <input type="submit" value="submit">
+
+
+        </form>
+    </main>
+</body>
+</html>
